@@ -1,0 +1,69 @@
+#cd-google-map *
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+#cd-google-map
+#cd-google-map:after
+#cd-google-map:before
+  box-sizing border-box
+#cd-google-map
+  font-size 100%
+  color #2d313f
+  background-color #e7eaf0
+
+#google-container
+  position relative
+  width 100%
+  height 100%
+  background-color #e7eaf0
+
+#cd-google-map
+  position relative
+  height 100%
+  
+  address
+    position absolute
+    width 100%
+    bottom 0
+    left 0
+    padding .6em
+    background-color rgba(229, 197, 148, .9)
+    color #222
+    font-size 1.5rem
+    font-weight 300
+    margin-bottom 4vh
+  
+@media only screen and (min-width: 768px)
+  #cd-google-map address
+    font-size 2rem
+    /*font-size: 0.9375rem;*/
+    text-align center
+#cd-zoom-in
+#cd-zoom-out
+  height 32px
+  width 32px
+  cursor pointer
+  margin-left 10px
+  background-color rgba(229,197,148,0.9)
+  background-repeat no-repeat
+  background-size 32px 64px
+  background-image url("../img/cd-icon-controller.svg")
+.no-touch 
+  #cd-zoom-in:hover
+  #cd-zoom-out:hover
+    background-color rgba(113, 34, 1, .6)
+  
+@media only screen and (min-width: 768px)
+  #cd-zoom-in
+  #cd-zoom-out
+    margin-left 50px
+    
+#cd-zoom-in
+  background-position 50% 0
+  margin-top 10px
+  margin-bottom 1px
+  
+@media only screen and (min-width: 768px)
+  #cd-zoom-in
+    margin-top 50px
+#cd-zoom-out
+  background-position 50% -32px

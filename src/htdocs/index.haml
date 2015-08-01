@@ -1,0 +1,636 @@
+!!!
+%html.no-js{:lang => ""}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %title Мобильная мечеть
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %link{:href => "apple-touch-icon.png", :rel => "apple-touch-icon"}
+    / Place favicon.ico in the root directory
+    %link{:href => "css/main.css?v=4", :rel => "stylesheet"}
+    %script{:src => "js/modernizr-2.8.3.min.js"}
+  %body.royal_preloader
+    /[if lt IE 8]
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    / Add your site or application content here
+    
+    %section.section.home
+      .cd-block
+        .cd-intro
+          .container-fluid
+            .header
+              .header-logo
+
+            %h1.section-title
+              Как 
+              %span.bold прочитать намаз вовремя
+              %br
+              %span.bold в любой точке Москвы
+              %br
+              проверенным способом?
+            %p.center
+              %a.btn.btn-good.btn-big.link2map{:href => '#', :title => '', , :alt => ''} Оставьте заявку  
+            %p.section-desc
+              и
+              %span.bold мечеть
+              сама&nbsp;  
+              %span.bold> подъедет к вам
+              \!
+          %a.mouse#mouse.link2map{ :href => '#', :alt => '', :title => '' }
+            %span
+
+    %section.section.map
+      .cd-block
+
+        .cd-half-block.left-side.map-box
+          #cd-google-map
+            #google-container
+            #cd-zoom-in
+            #cd-zoom-out
+            %address Мечеть сейчас здесь! 
+
+        .cd-half-block.right-side.container-fluid
+          .row  
+            .col-md-12
+              %h2.section-title
+                %span.bold Cписок остановок
+                мобильной мечети:
+
+            .col-md-12.stage-table
+              .table-responsive{ :style => 'max-height: 400px' }
+                %table.table.table-hover
+                  %thead
+                    %tr
+                      %th #
+                      %th Адрес
+                      %th Время
+                      %th.center 
+                        Название
+                        %br
+                        намаза
+                      %th.center 
+                        Зарегистрировано
+                        %br
+                        мест
+                      %th 
+                  %tbody
+                    %tr
+                      %th{:scope => "row"} 1
+                      %td Гагарина, 8
+                      %td 18:30
+                      %td.center Фаджр
+                      %td.center 3
+                      %td 
+                        %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+                    %tr
+                      %th{:scope => "row"} 2
+                      %td Площадь Ленина
+                      %td 20:00
+                      %td.center Иша
+                      %td.center 0
+                      %td 
+                        %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+                    %tr
+                      %th{:scope => "row"} 3
+                      %td Красноармейская, 156
+                      %td 23:00
+                      %td.center Иша
+                      %td.center 1
+                      %td 
+                        %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться 
+                    %tr
+                      %th{:scope => "row"} 4
+                      %td Шаумяна, 109
+                      %td 5:00
+                      %td.center Фаджр
+                      %td.center 3
+                      %td 
+                        %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться 
+
+                    %tr.hidden-sm.hidden-md.hidden-lg
+                      %th{:scope => "row"} 1
+                      %td Гагарина, 8
+                      %td 18:30
+                      %td.center Фаджр
+                      %td.center 3
+                      %td 
+                        %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+                    %tr.hidden-sm.hidden-md.hidden-lg
+                      %th{:scope => "row"} 2
+                      %td Площадь Ленина
+                      %td 20:00
+                      %td.center Фаджр
+                      %td.center 0
+                      %td 
+                    %tr.hidden-sm.hidden-md.hidden-lg
+                      %th{:scope => "row"} 3
+                      %td Красноармейская, 156
+                      %td 23:00
+                      %td.center Зухр
+                      %td.center 1
+                      %td 
+                        %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+                    %tr.hidden-sm.hidden-md.hidden-lg
+                      %th{:scope => "row"} 4
+                      %td Воскресная,  8Б
+                      %td 4:00
+                      %td.center Магриб
+                      %td.center 7
+                      %td 
+                        %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+                    %tr.hidden-sm.hidden-md.hidden-lg
+                      %th{:scope => "row"} 5
+                      %td Кучковская, 43
+                      %td 6:00
+                      %td.center Фаджр
+                      %td.center 4
+                      %td 
+                        %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+
+            .col-md-12.hidden-xs
+              %p.center
+                %a.btn.btn-good.btn-big{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-stage'} Все остановки  
+                %span.map-or.hidden-xs или
+                %a.map-link2stage.link2map.nowrap.hidden-xs{:href => '#', :title => '', , :alt => ''} Оставить заявку 
+
+
+    %section.section.stage
+      .cd-block
+
+        .cd-half-block.left-side
+          .stage-bg
+
+        .cd-half-block.right-side.container-fluid
+          .row
+            .col-md-12
+              %h2.section-title
+                Хочу
+                %span.bold совершить намаз в
+                мобильной
+                %span.bold мечети
+
+              %form.map-form.container-fluid
+                .row
+                  .form-group.col-md-6
+                    %input.form-control{:placeholder => "Имя", :type => "text", :name => 'name'}
+                  .form-group.col-md-6
+                    %input.form-control{:placeholder => "Телефон", :type => "text", :name => "tel", :name => 'tel'}
+                .row
+                  .form-group.col-md-6
+                    %input.form-control{:placeholder => "Адресс остановки", :type => "text", :name => 'adress'}
+                  .form-group.col-md-6
+                    %select.form-control{ :name => 'type'}
+                      %option{ :disabled => 'disabled', :selected => 'selected'} Вид намаза
+                      %option{ :value => 'Фаджр' } Фаджр
+                      %option{ :value => 'Зухр' } Зухр
+                      %option{ :value => 'Аср' } Аср
+                      %option{ :value => 'Магриб' } Магриб
+                      %option{ :value => 'Иша' } Иша
+                .row
+                  .form-group.col-md-12
+                    %textarea.form-control{ :rows => "2", :placeholder => "Комментарий", :name => 'desc'}
+                .row
+                  .col-md-12.center
+                    %button.btn.btn-good{:type => "submit"} Отправить заявку
+                    %span.map-or.hidden-xs или
+                    %a.map-link2stage.nowrap.hidden-xs{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-stage'} Выбрать остановку 
+
+              %p.section-desc
+                %span.bold или звоните 
+                по телефону 
+                %span.big.nowrap 
+                  8 800&nbsp;
+                  %span.bold> 539
+                  \-
+                  %span.bold>53
+                  \-
+                  %span.bold>78   
+
+
+
+    %section.section.video
+      .cd-block
+
+        .cd-half-block.left-side.video-box
+          .video-bg
+            .player{"data-property" => "{videoURL:'T8I-9wbt4DM',showControls:false,containment:'self',startAt:0,mute:true,autoplay:true,loop:true}"}
+
+            %p.video-desc Камера в машине 
+
+        .cd-half-block.right-side.container-fluid
+          .row
+            .col-md-12
+              %h2.section-title
+                Схема работы
+
+            .col-md-12
+              %p.big 
+                В Москве 
+                %span.bold установлено 6 
+                стационарных 
+                %span.bold мобильных мечетей
+                рядом с крупными бизнес-центрами.
+
+              %p.big 
+                В случае, если поблизости с Вашим местом работы стационарный прицеп не установлен, Вы сможете воспользоваться 
+                %span.bold двумя передвигающимися 
+                по городу
+                %span.bold прицепами. 
+                %span.bold Для этого:
+
+              %ul.big.video-list
+                %li Вы оставляете заявку на сайте за один день (место, время, контакты);
+
+                %li Мы перезваниваем Вам и подтверждаем заявку;
+
+                %li Мобильная мечеть подъезжает к месту, указанному в заявке. 
+
+            .col-xs-8.col-xs-offset-2.video-btn
+              %p.center
+                / %a.btn.btn-good.btn-big.link2shema{:href => '#', :title => '', , :alt => ''} Подробнее  
+                %a.fancybox{:href => "img/car2.jpg", :rel => "fancybox-item", :title => ""}
+                  %img{ :src => 'img/car2.jpg', :title => '', :alt => '', :style => 'max-width: 100%;' }
+
+
+    %section.section.photo
+      .cd-block
+
+        .cd-half-block.left-side.cd-half-block-text
+          .row
+            .col-md-12
+              %h2.section-title
+                СМИ о нас
+          .row
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://tass.ru/obschestvo/1756581', :title => ''}
+                %img{ :src => "img/logo/tass.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://yodnews.ru/news/2015/02/10/mobque', :title => ''}
+                %img{ :src => "img/logo/yod.svg", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://news.rambler.ru/29090188/', :title => ''}
+                %img{ :src => "img/logo/rambler0.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://www.interfax.ru/russia/423020', :title => ''}
+                %img{ :src => "img/logo/interfax.gif", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://dom.lenta.ru/news/2015/02/10/mosque/', :title => ''}
+                %img{ :src => "img/logo/lenta.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://www.vesti.ru/doc.html?id=2355910', :title => ''}
+                %img{ :src => "img/logo/vesti.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://theslump.ru/today/mobile-mosque/', :title => ''}
+                %img{ :src => "img/logo/slump.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://www.msk.kp.ru/daily/26342.7/3225036/', :title => ''}
+                %img{ :src => "img/logo/kp.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://snob.ru/selected/entry/87693', :title => ''}
+                %img{ :src => "img/logo/snob.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://www.the-village.ru/village/city/estate/120673-mechet', :title => ''}
+                %img{ :src => "img/logo/the_village.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://tjournal.ru/club/2758-po-ulicam-moskvi-mozhet-nachat-kursirovat-mobilnaya-mechet', :title => ''}
+                %img{ :src => "img/logo/tj.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'https://boomstarter.ru/projects/290649/mobilnaya_mechet', :title => ''}
+                %img{ :src => "img/logo/boomstarter.svg", :alt => "" }
+
+
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://www.m24.ru/articles/66155', :title => ''}
+                %img{ :src => "img/logo/m24.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://gorod.afisha.ru/news/10476/', :title => ''}
+                %img{ :src => "img/logo/gorod.png", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://www.respublika-kaz.info/news/doslovno/40359/', :title => ''}
+                %img{ :src => "img/logo/kazah.gif", :alt => "" }
+            .clients.col-md-3.col-xs-6
+              %span
+              %a{:href => 'http://omoskva.ru/news/society/dlya_musulman_prozhivayushchikh_v_stolitse_budet_sozdana_peredvizhnaya_mechet/?sphrase_id=1400', :title => ''}
+                %img{ :src => "img/logo/omoskva.png", :alt => "" }
+
+        .cd-half-block.right-side.container-fluid
+          .row
+            .col-md-12
+              %h2.section-title
+                Видео о проекте
+          .row
+
+            .col-md-12.photo-video
+              %iframe{:frameborder => "0", :src => "//player.rutv.ru/iframe/video/id/1178021/sid/360podmoskovie/start_zoom/true/showZoomBtn/true?time_play=0", :style => "width: 100%; height: 40vh;"}
+
+            .col-md-12.hidden-xs
+              %p.center
+                %a.btn.btn-good.btn-big.link2help{:href => '#', :title => '', , :alt => ''} Помочь проекту  
+
+
+
+    %section.section.qw.help#help
+      .cd-block
+
+        .cd-half-block.left-side.cd-half-block-text
+          .row
+            .col-md-12
+              %h2.section-title
+                Смета реализации проекта
+
+            .col-md-12.help-smeta
+              %p.big Работы и первичные затраты:
+
+              %ol
+                %li Первичный осмотр, выбор автобуса 
+                %li 
+                  Осмотр с техническим специалистом = 3 000 руб. с учетом выезда.
+                  %br
+                  Осмотр внешний, корпус, двигатель, трансмиссия, расходники, резина, электрика, и т.д.
+                  %br
+                  Пусть попробует проехаться.
+                %li Покупка, временная страховка на неделю = 310 000 ~ 450 000 руб.
+                %li Подбор вендинг автомата.
+                %li Транспортировка до места переоборудования = 8000 руб. (бензин, еда)
+                %li Оформление в ГАИ разрешения на переоборудование. Пошлина = 3 000 руб.
+                %li Вызываем замерщиков для обклейки, заказываем дизайн.
+                %li Вызываем замерщиков на переоборудование, заказываем.
+                %li Покупка вендинг автомата. = 150 000 руб.
+                %li Переоборудование, установка вендинг автомата. = 20 000 руб.
+                %li Оклейка. = 50 000 руб.
+                %li 
+                  Перевод категории в ГИБДД, получение транзитных номеров, временная страховка. 
+                  %br
+                  Пошлина = 3 000 руб.
+                %li Транспортировка в Москву. = 8000 руб. (бензин, еда)
+                %li 
+                  Постановка на учет в ГИБДД г.Москва. Пошлина = 3 000 руб.
+                  Ожидаемые затраты: от 558 000 руб. (со своим вендинг автоматом) и от  408 000 руб. (без него).
+
+              %p.big Сроки: 20 - 30 дней
+
+              %p.big Затраты постоянные:
+
+              %ol
+                %li ЗП водителя: 25 000 рублей
+                %li Бензин: 15 000 рублей
+
+              %p.big Итого: 40 000 руб/мес.
+
+              %p.big Монетизация:
+
+              %ol
+                %li Аренда место вендинг автомат: 3 000 рублей
+                %li Размещение рекламы внутри: 15 000 рублей
+                %li Продажа своего товара в автомате: 20 000 рублей
+                %li Пожертвования: 10 000 рублей
+
+              %p.big Итого: 48 000 руб/мес.
+
+
+            / .row
+            / .col-md-12.hidden-xs
+            /   %h2.section-title &nbsp;
+            / .col-md-12
+            /   %p.section-desc
+            /     Собранные средства будут затрачены следующим образом:
+            /   %ol
+            /     %li Покупка прицепа-дачи;
+            /     %li 
+            /       Проведение полной реконструкции внутри;
+            /       %ul
+            /         %li 
+            /           1 вариант: 
+            /           %span.bold «мобильный»
+            /           \- закреплен с автомобилем и находится постоянно в движении, с остановками по заявкам
+            /         %li 
+            /           2 вариант:
+            /           %span.bold «стационарный»
+            /           \- будет доставляться в определенное место утром и забираться вечером.
+
+            /     %li Покупка автомобиля для прицепа;
+            /     %li Найм водителя для мобильной мечети;
+            /     %li Запуск сайта. 
+
+            .photo-list.col-md-12
+              .row
+                .col-sm-3
+                  %a.fancybox{:href => "img/photo1.jpg", :rel => "fancybox-gallery", :title => ""}
+                    %img{:alt => "", :src => "img/photo1.jpg", :title => ""}
+                .col-sm-3
+                  %a.fancybox{:href => "img/photo2.jpg", :rel => "fancybox-gallery", :title => ""}
+                    %img{:alt => "", :src => "img/photo2.jpg", :title => ""}
+                .col-sm-3
+                  %a.fancybox{:href => "img/photo3.jpg", :rel => "fancybox-gallery", :title => ""}
+                    %img{:alt => "", :src => "img/photo3.jpg", :title => ""}
+                .col-sm-3
+                  %a.fancybox{:href => "img/photo4.jpg", :rel => "fancybox-gallery", :title => ""}
+                    %img{:alt => "", :src => "img/photo4.jpg", :title => ""}
+
+
+        .cd-half-block.right-side.container-fluid
+          .row
+            .col-md-12
+              %h2.section-title
+                Помочь проекту
+
+              %form.qw-form.container-fluid
+                .row
+                  .form-group.col-md-12
+                    %p Сумма пожертвования
+                    %input.form-control{:placeholder => "5 000", :type => "text", :name => "sum"}
+                  .col-md-12.center
+                    %button.btn.btn-good{:type => "submit"} Пожертвовать
+
+            .col-md-12.qw-quota.center
+              %p.big مَنْ بنى لِلَّهِ مَسْجِدًا بنى اللَّهُ لَهُ بَيْتًا فِي الْجَنَّةِ
+              %p{ :style => 'font-style: italic' } Тому, кто во имя Аллаха построит мечеть, Всевышний построит дом в Раю» (согласованный хадис).
+
+
+
+    %section.section.qw
+      .cd-block
+
+        .cd-half-block.left-side.cd-half-block-text
+          .row
+            .col-md-12.hidden-xs
+              %h2.section-title &nbsp;
+            .col-md-12
+              %p 
+                Проект 
+                %span.bold "Мобильная мечеть" 
+                призван облегчить мусульманам Москвы поиск места для совершения очередного намаза вовремя и без помех. По замыслу авторов проекта, в Москве будут запущены автомобили, переоборудованные для удобства верующих: место для намаза, тахаратхана. Любой желающий сможет с легкостью воспользоваться услугами мобильной мечети, оставив заявку на сайте.
+
+              %p 
+                Проект реализовывается командой 
+                %span.bold Halal Guide 
+                за плечами которой немало успешных проектов. Один из них - сайт и мобильное приложение Halal Guide – инновационный гид по местам и событиям для мусульман по всему миру. 
+
+              %p 
+                Благодаря приложению 
+                %span.bold Halal Guide 
+                можно не только узнать адрес ближайшего халяль-кафе, но и узнать размер среднего чека, наличие wi-fi интернета, услуги доставки, возможность безналичной оплаты в кафе и ресторана.
+
+              %p 
+                Кроме того, успешно реализуется проект&nbsp;
+                %span.bold> namaz-time.ru
+                \, позволяющий грамотно и верно рассчитать время намазов для любого города, имеющегося в базе разработчиков.
+
+              %p 
+                Своей 
+                %span.bold главной целью
+                команда, работающая над проектами "Мобильная мечеть", "Halal Guide" и др., видят
+                %span.bold в максимальном облегчении жизни правоверных мусульман 
+                как в крупных мегаполисах, так и в небольших городах.
+
+            .col-xs-6.col-xs-offset-3.video-btn
+              %p.center
+                %a{:href => 'http://halalguide.me/', :title => '', , :alt => ''}   
+                  %img{ :src => 'img/logo2.png', :title => '', :alt => '', :style => 'max-width: 100%;' }
+
+          %p.qw-developer
+            Cделано с любовью в
+            %a{:alt => "Dotsi", :href => "http://www.dotsi.ru", :title => "Dotsi"} DotsI
+
+        .cd-half-block.right-side.container-fluid
+          .row
+            .footer
+              .footer-logo
+            .col-md-12
+              %h2.section-title
+                Остались вопросы?
+              %p.section-desc
+                Мы с удовольствие ответим. Пишите
+
+              %form.qw-form.container-fluid
+                .row
+                  .form-group.col-md-6
+                    %input.form-control{:placeholder => "Имя", :type => "text", :name => "name"}
+                  .form-group.col-md-6
+                    %input.form-control{:placeholder => "Телефон", :type => "text", :name => "tel", :name => "tel"}
+                .row
+                  .form-group.col-md-12
+                    %textarea.form-control{ :rows => "2", :placeholder => "Вопрос", :name => "deck" }
+                  .col-md-12.center
+                    %button.btn.btn-good{:type => "submit"} Отправить
+
+
+
+    :javascript
+      window._map = new Object();
+
+      // Центр карты
+      _map.latitude_center = 55.749792;
+      _map.longitude_center = 37.632495;
+      _map.map_zoom = 11;
+
+      // Мечеть
+      _map.latitude = 55.745;
+      _map.longitude = 37.619;
+      _map.content = '<h2>Мечеть сейчас здесь!</h2><p>Шаумяна, 109</p>';
+
+      // Точки
+      _map.dots = [
+        [55.803472, 37.468387, 'Фаджр', 'Гагарина, 8', '23:00'],
+        [55.771041, 37.711459, 'Зухр', 'Площадь Ленина', '16:00'],
+        [55.688298, 37.596103, 'Аср', 'Красноармейская, 156', '3:00'],
+      ];
+
+    %script{:src => "//maps.googleapis.com/maps/api/js"}
+    %script{:src => "js/main.js?v=4"}
+    %script{:src => "js/jquery.mb.YTPlayer.js"}
+
+
+    #form-phone.reveal-modal
+      %h2 Заказать звонок
+      %form.row.flat_form{:role => "form"}
+        .col-md-8.col-md-offset-2.contact-qw
+          .form-group
+            %input.form-control.input-lg{:name => "name", :placeholder => "Ваше имя", :type => "text"}
+          .form-group
+            %input.form-control.input-lg{:name => "tel", :placeholder => "Ваш телефон", :type => "text"}
+          .form-group{:style => "text-align: center;"}
+            %input.btn.btn-good{:type => "submit", :value => "Отправить"} 
+      %a.close-reveal-modal &#215;      
+            
+    #form-stage.reveal-modal{ :style => 'width: 60vw; margin-left: -30vw;'}
+      %h2 Остановки
+      .table-responsive
+        %table.table.table-hover
+          %thead
+            %tr
+              %th #
+              %th Адрес
+              %th Время
+              %th.center Название намаза
+              %th.center Зарегистрировано мест
+              %th 
+          %tbody
+            %tr
+              %th{:scope => "row"} 1
+              %td Гагарина, 8
+              %td 18:30
+              %td.center Фаджр
+              %td.center 3
+              %td 
+                %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+            %tr
+              %th{:scope => "row"} 2
+              %td Площадь Ленина
+              %td 20:00
+              %td.center Магриб
+              %td.center 0
+              %td 
+                %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+            %tr
+              %th{:scope => "row"} 3
+              %td Красноармейская, 156
+              %td 23:00
+              %td.center Зухр
+              %td.center 1
+              %td 
+                %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+            %tr
+              %th{:scope => "row"} 4
+              %td Воскресная,  8Б
+              %td 4:00
+              %td.center Фаджр
+              %td.center 7
+              %td 
+                %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+            %tr
+              %th{:scope => "row"} 5
+              %td Кучковская, 43
+              %td 6:00
+              %td.center Зухр
+              %td.center 4
+              %td 
+                %a.btn.btn-good.btn-small{:href => '#', :title => '', , :alt => '', 'data-reveal-id': 'form-phone'} Записаться  
+      %a.close-reveal-modal &#215;          
+
+    #form-help.reveal-modal
+      %h2 Помочь проекту
+      %p
+        %span.bold Для тех, кто поддержит
+        наш проект посильной для него суммой, мы подготовили
+        %span.bold различные вознаграждения,
+        подробнее о них узнать, а также о способах помощи вы можете на:
+        %p.center
+          %a.btn.btn-good{ :href => 'http://boomstarter.ru/projects/290649/mobilnaya_mechet' , :title => 'BoomStarter' } boomstarter.ru
+      %a.close-reveal-modal &#215;      

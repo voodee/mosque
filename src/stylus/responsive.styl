@@ -1,0 +1,110 @@
+@media only screen and (min-width: 768px)
+  body
+    &::before
+      content 'desktop'
+
+  .section
+    height 100vh
+    &:first-of-type
+      .cd-block
+        visibility visible
+
+  .cd-half-block
+    height 100vh !important
+    width 50%
+    position absolute
+    top 0
+    &:nth-of-type(2)
+    &.cd-half-block-text  
+      padding 10vh 7vh
+
+  .cd-block
+    position fixed
+    width 100%
+    min-height 100vh
+    top 0
+    left 0
+    height 100vh
+    box-shadow 0 0 40px rgba(0, 0, 0, 0.7)
+    visibility hidden
+    & > *
+      visibility visible
+
+
+  .section:nth-of-type(odd) .cd-half-block:first-of-type
+  .section:nth-of-type(even) .cd-half-block:nth-of-type(2)
+    left 0
+    transform translateX(-100%)
+
+  .section:nth-of-type(even) .cd-half-block:first-of-type
+  .section:nth-of-type(odd) .cd-half-block:nth-of-type(2)
+    right 0
+    transform translateX(100%)
+
+
+
+    
+@media only screen and (min-width: 769px) and (max-width: 799px)
+
+  .cd-half-block:nth-of-type(2)
+  .cd-half-block-text  
+    padding 4% !important
+    
+
+    
+@media only screen and (min-width: 667px) and (max-width: 736px)
+
+  .cd-half-block:nth-of-type(2)
+  .cd-half-block-text  
+    padding 0 10px
+    
+
+
+    
+@media only screen and (min-width: 481px) and (max-width: 568px)
+    
+  .cd-half-block:nth-of-type(2)
+  .cd-half-block-text  
+    padding 0
+    padding 0 10px
+    margin-bottom 40px
+    
+    
+@media only screen and (min-width: 385px) and (max-width: 414px)
+
+  .cd-half-block:nth-of-type(2)
+  .cd-half-block-text  
+    background-color transparent
+    padding 0
+    padding 9% 15px 9% 15px
+    
+@media only screen and (min-width: 361px) and (max-width: 384px)
+  
+  .cd-half-block:nth-of-type(2)
+  .cd-half-block-text  
+    background-color transparent
+    padding 0
+    padding 9% 15px 9% 15px
+    
+@media only screen and (min-width: 321px) and (max-width: 360px)
+//   .section:nth-of-type(2) .cd-half-block:first-of-type
+//   .section:nth-of-type(3) .cd-half-block:first-of-type
+//   .section:nth-of-type(4) .cd-half-block:first-of-type
+//   .section:nth-of-type(5) .cd-half-block:first-of-type
+//   .section:nth-of-type(6) .cd-half-block:first-of-type
+//   .section:nth-of-type(7) .cd-half-block:first-of-type
+//     height 150px !important
+    
+  .cd-half-block:nth-of-type(2)
+  .cd-half-block-text  
+    padding 0
+    padding 0 10px
+    margin-top 40px
+    
+@media only screen and (max-width: 320px)
+
+  .cd-half-block:nth-of-type(2)
+  .cd-half-block-text  
+    padding 0
+    padding 0 10px
+    margin-top 30px

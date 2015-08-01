@@ -1,0 +1,580 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900italic,900,700italic&subset=latin,cyrillic)
+@import 'bootstrap/index.styl'
+@import 'lib/YTPlayer.css'
+@import 'lib/reveal.css' 
+@import 'lib/jquery.fancybox.css'
+@import 'lib/sweet-alert.css'
+
+@import 'lib/royal_preloader.css'
+   
+
+/* OverLoad */
+.fancybox
+  max-width 100%
+  max-height 100%
+
+/* General */
+
+::-moz-selection 
+  background-color #666
+  color #fff 
+::selection
+  background-color #666
+  color #fff
+
+html,
+body
+  font-family 'Roboto', sans-serif
+  font-weight 300
+  color #45180C  
+  font-size 16px
+  -moz-font-smoothing antialiased
+  -ms-font-smoothing antialiased
+  -0-font-smoothing antialiased
+
+body
+  &::before
+    content 'mobile'
+    display none
+
+*, 
+*::after, *::before
+  box-sizing border-box
+
+*
+  box-sizing border-box
+
+a
+  text-decoration none
+  transition all .25s ease
+  color #45180C
+
+  &:focus
+    outline none
+    outline-offset 0
+    
+  &:hover  
+    color #45180C
+    
+
+/* Standard */
+
+.table 
+  > thead > tr > th
+    font-weight 100
+
+  .btn
+    z-index 1 
+
+.form
+  &-control
+    border-radius 0
+    font-size 1em
+    font-weight 300
+    padding .55em .6em
+    line-height 2.1em
+    height 2.1em
+    
+    &:focus 
+      border-color #E9C966
+      outline 0
+      box-shadow inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(233, 187, 102, .6)
+
+select
+textarea
+  &.form-control
+    padding-top 0 !important
+    padding-bottom 0 !important
+
+.btn
+  position relative
+  display inline-block 
+  border-radius 0
+  font-weight 300
+  
+  transition all .3s
+  
+  &:hover
+    color #fff
+    
+  &:after
+    content ''
+    position absolute
+    z-index -1
+    transition all .3s 
+
+  &-good    
+    background none
+    color #45180c
+    border .1rem solid #45180c
+    font-size 1.8rem
+    padding .2rem 1rem
+    line-height 1.8em
+      
+    &:after 
+      width 100%
+      height 0
+      bottom 0
+      left 0
+      background #45180C
+
+
+    &:hover
+    &.active
+      &:after 
+        height 100%
+
+
+  &-big 
+    font-size 140%
+    
+  &-small 
+    font-size 75% !important
+    padding 0 .5em
+
+    padding .2em 1em
+    line-height 1em
+    height 1.6em
+      
+
+  &-white 
+    color #fff
+    border-color #fff
+      
+    &:after 
+      width 100%
+      height 0
+      bottom 0
+      left 0
+      background #45180C
+
+
+
+.big
+  font-size 2.4vh
+  
+.bold
+  font-weight 300
+  
+p .bold  
+  font-weight 400
+
+.center
+  text-align center 
+  
+.left
+  text-align left 
+  
+.nowrap
+  white-space nowrap
+
+.section 
+  height 100vh
+
+  &-title
+    font-weight 100
+    //font-size 1.5rem
+    font-size 6vh
+    text-align center
+    
+  &-desc 
+    font-weight 300
+    font-size 3vh
+    text-align center
+    color rgba(69, 24, 12, .9)  
+    
+    .bold
+      font-weight 400
+
+  &.home
+    .section
+      &-title
+        margin 6vh 0 8vh
+      
+      &-desc   
+        margin-top 3vh
+
+  &.map
+  .map
+          
+    &-form
+      margin-top 3rem
+      
+    &-or 
+      margin 0 2rem  
+      font-weight 400
+      
+    &-link2stage
+      border-bottom 1px dashed
+      
+      &:hover
+      &:focus
+        text-decoration none
+        border-color transparent  
+        
+
+  &.stage
+  .stage  
+    .section
+      &-desc
+        margin-top 3vh
+        
+        .big 
+          font-size 4vh
+    &-bg
+      height 100%
+      width 100%
+      background #e5c594 url('../img/logo-black.png') 50% 40% no-repeat
+
+    &-table
+      margin-top 5vh
+      margin-bottom 7vh
+      
+      tbody
+        th
+        td
+          line-height 1.9em
+
+
+  &.video
+  .video   
+    &-bg
+      position relative
+      height 100%
+      width 100%
+
+      .player
+        height 100%
+        
+    &-btn
+      margin-top 4vh    
+        
+    &-desc    
+      position absolute
+      width 100%
+      bottom 0
+      left 0
+      padding .6em
+      background-color rgba(229, 197, 148, .9)
+      color #222
+      font-size .8125rem
+      font-weight 300
+      margin-bottom 4vh
+      
+    &-list
+      list-style none
+      
+      li 
+        position relative
+        
+        &:after
+          content '―'
+          font-family Arial,'san-serif'
+          position absolute
+          left -2em
+          top 0
+          
+
+    .section-title
+      margin-bottom 4vh
+      
+    .bold
+      font-weight 400  
+
+  &.photo
+  .photo  
+    &-bg
+      height 100%
+      width 100%
+      background url('../img/car.jpg') 50% 40% no-repeat
+      background-size contain
+      
+    &-list
+      img
+        margin-top 5vh
+        max-width 100%  
+    
+    &-video
+      margin 3vh 0 7vh
+
+    .clients 
+      display table-cell
+      vertical-align middle
+      text-align center
+      height 15vh
+
+      * 
+        vertical-align middle
+
+      span 
+        display inline-block
+        height 100%
+        width 1px 
+        
+      img
+        max-width 90%
+        max-height 90%  
+      
+    
+  &.qw
+  .qw  
+    &-bg
+      height 100%
+      width 100%
+      background url('../img/logo.png') 50% 20% no-repeat
+      
+
+    &-form
+      margin-top 3rem
+
+    &-quota
+      margin-top 7vh 
+
+    &-developer
+      position absolute
+      bottom 2vh
+      left 0
+      width 100%
+      text-align center 
+      font-size .7rem
+      
+      a
+        color #222
+        &:hover
+        &:focus
+          text-decoration none
+          border-bottom 1px solid #222   
+  // &#home 
+  //   .section-title
+  //     color #45180C  
+
+
+
+.cd
+  &-block
+  &-half-block 
+    transform translateZ(0)
+    backface-visibility hidden
+    background #fff
+    
+    &:nth-of-type(1)
+      background-position center center
+      background-repeat no-repeat
+      
+
+  &-block
+    transform-origin center center
+    
+
+/* Home */
+.header
+.footer
+  margin-top 6vh
+  
+  &-logo
+    background url('../img/logo.png')
+    background-size contain
+    background-position 50%
+    background-repeat no-repeat
+    height 20vh
+
+.footer
+  margin-top 0
+
+
+
+.mouse
+  position absolute
+  bottom 6vh
+  left 50%
+  margin-left -1rem
+  width 2rem
+  height 3rem
+  border-radius 1.2rem
+  border 1px solid #45180c
+  z-index 99999
+  
+  span
+    display block
+    margin .5rem auto
+    width .1rem
+    height .5rem
+    border-radius .3rem
+    background #45180c
+    border 1px solid transparent
+    
+    animation-duration 1s
+    animation-fill-mode both
+    animation-iteration-count infinite
+    animation-name scroll
+    
+  &:hover
+  &:focus
+    opacity .5
+    
+@keyframes scroll {
+  0% {
+    opacity 1
+    transform translateY(0)
+  }
+  
+  100% {
+    opacity 0
+    transform translateY(1rem)
+  }
+}
+
+
+
+/* About */
+
+@import 'map.styl'
+
+
+@import 'responsive.styl'
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min)
+  
+  .form-control
+  .btn-good  
+    font-size .7em
+    padding .65em .6em
+    line-height 2em
+    height 2em
+      
+  .btn
+    &-good
+      padding .4em 1.2em
+      line-height 1em
+    &-small
+      padding .2em 1em
+      line-height 1em
+      height 1.6em
+    // &-big 
+    //   font-size 1.2em
+      
+  // .section 
+  //   &-title
+  //     font-size 2rem
+         
+  .section 
+    .video-desc
+      font-size 2rem  
+      text-align center
+      
+    
+    &.help
+    .help  
+      &-smeta
+        max-height 40vh
+        overflow auto
+        margin-top 4vh  
+
+      &-smeta2
+        font-size .8vh
+        
+        .big
+          font-size 1.1vh
+          
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min)
+  
+  .form-control
+  .btn-good  
+    font-size .9em
+    padding .8em .8em
+    line-height 2.5em
+    height 2.5em
+      
+  .btn
+    &-good
+      padding .6em 1.4em
+      line-height 1.2em
+    &-small
+      padding .4em 1.2em
+      line-height 1.2em
+      height 2.1em
+    // &-big 
+    //   font-size 1.4em
+
+  // .section 
+  //   &-title
+  //     font-size 2.5rem
+    
+      
+     
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min)
+  
+  .form-control
+  .btn-good 
+    font-size 1.1em
+    padding .95em 1em
+    line-height 3em
+    height 3em
+      
+  .btn
+    &-good
+      padding .8em 1.6em
+      line-height 1.4em
+      
+    &-small
+      padding .6em 1.4em
+      line-height 1.4em
+      height 2.6em
+    // &-big 
+    //   font-size 1.6em
+
+  // .section 
+  //   &-title
+  //     font-size 3rem
+      
+
+
+
+
+@media (max-width: $screen-xs-max)
+
+
+  .section
+    height auto
+    
+    &-title
+      font-size 3rem
+
+    &.photo
+    .photo
+      .clients img    
+        max-width 60%
+        
+    &.video
+    .video
+      &-list li:after
+        left -1.3em !important
+        
+      &-desc
+        font-size 1.5rem !important  
+    
+  .mouse
+    display none !important 
+  
+  .cd-intro
+    margin-bottom 3rem
+
+  .map-box
+  .video-box
+    position relative
+    height 16em !important
+    
+  .video-box
+    height 30rem !important
+  
+  .qw
+    margin-bottom 9vh
+    &-developer
+      display none  
+      
